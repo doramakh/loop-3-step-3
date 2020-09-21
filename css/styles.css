@@ -140,6 +140,7 @@ img{
   padding: 15px;
   margin-left: -20px;
   margin-right: -20px;
+  margin-top: auto;
   color: #fff;
   background-color: #333;
   border-radius: 0 0 5px 5px;
@@ -160,6 +161,7 @@ img{
   }
 
   .movie-card{
+    align-items: stretch;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -171,7 +173,6 @@ img{
   }
 
   .movie-card__img{
-    height: 250px;
     object-position: center top;
     border-radius: 5px 0 0 5px;
   }
@@ -179,9 +180,11 @@ img{
   .movie-card__info{
     position: static;
     flex-grow: 1;
+    width: 200px;
     padding-top: 20px;
     margin-left: 0;
     margin-right: 0;
+    font-size: 12px;
     border-radius: 0 5px 5px 0;
     transform: scale(1);
     opacity: 1;
