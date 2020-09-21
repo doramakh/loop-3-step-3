@@ -56,12 +56,12 @@ img{
 }
 
 .movies__item{
-  position: relative;
-  z-index: 1;
   width: 240px;
 }
 
 .movie-card{
+  position: relative;
+  z-index: 2;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 50px;
@@ -78,6 +78,8 @@ img{
 }
 
 .movie-card__img{
+  position: relative;
+  z-index: 2;
   display: block;
   width: 240px;
   height: 370px;
@@ -87,7 +89,7 @@ img{
 
 .movie-card__info{
   position: absolute;
-  z-index: -1;
+  /* z-index: -1; */
   left: -20px;
   top: 20px;
   right: -20px;
@@ -95,12 +97,14 @@ img{
   opacity: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding-top: 370px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
   background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(.7,1.71,.83,.67);
 }
 
 .movie-card__name{
@@ -134,15 +138,14 @@ img{
 .movie-card__btn{
   display: block;
   padding: 15px;
-  width: 240px;
-  margin: 0 -20px;
+  margin-left: -20px;
+  margin-right: -20px;
   color: #fff;
   background-color: #333;
   border-radius: 0 0 5px 5px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 0.5s cubic-bezier(0.27, 0.19, 1, 0);
 }
 
 .movie-card:hover .movie-card__info{
